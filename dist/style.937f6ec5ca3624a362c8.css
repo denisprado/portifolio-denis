@@ -1,0 +1,337 @@
+@charset "UTF-8";
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/* Transformando 1rem em 10px*/
+body {
+  box-sizing: border-box;
+  font-size: 0.625rem;
+  margin: 0 auto; }
+
+.portifolio-header, .selected-work, .featured-work {
+  width: 100%;
+  margin: 0 auto; }
+  @media (max-width: 320px) {
+    .portifolio-header, .selected-work, .featured-work {
+      max-width: 300px; } }
+  @media (min-width: 575.98px) {
+    .portifolio-header, .selected-work, .featured-work {
+      max-width: 540px; } }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .portifolio-header, .selected-work, .featured-work {
+      max-width: 556px; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .portifolio-header, .selected-work, .featured-work {
+      max-width: 748px; } }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .portifolio-header, .selected-work, .featured-work {
+      max-width: 972px; } }
+  @media (min-width: 1200px) {
+    .portifolio-header, .selected-work, .featured-work {
+      max-width: 1180px; } }
+
+@media (max-width: 575.98px) {
+  .featured-work__articles {
+    grid-template-columns: repeat(1, 1fr); } }
+
+@media (min-width: 576px) {
+  .featured-work__articles {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem; } }
+
+@media (min-width: 992px) {
+  .featured-work__articles {
+    grid-template-columns: repeat(3, 1fr); } }
+
+.portifolio-header {
+  grid-template-columns: repeat(2, 1fr);
+  text-align: right; }
+  @media (max-width: 412px) {
+    .portifolio-header {
+      grid-template-columns: repeat(1, 1fr);
+      text-align: center; } }
+
+.selected-work img, .featured-work__articles__work img {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+/* Tipografia */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+
+p {
+  font-size: 1rem;
+  line-height: 1rem;
+  margin-bottom: 1.5rem; }
+
+a {
+  color: #226699; }
+  a:hover {
+    background-color: #226699;
+    text-decoration: none;
+    color: white; }
+
+h1 {
+  font-weight: 100;
+  font-size: 4.24rem; }
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.0375rem;
+  color: #226699; }
+
+h3 {
+  font-weight: 100;
+  font-size: 2.5rem; }
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: #226699; }
+
+footer p {
+  font-size: 0.75rem; }
+
+.portifolio-footer p {
+  color: #226699;
+  font-size: 0.75rem; }
+
+@-webkit-keyframes slidein {
+  from {
+    margin: -50rem;
+    width: 1200%; }
+  to {
+    margin: 0rem;
+    width: 100%; } }
+
+@keyframes slidein {
+  from {
+    margin: -50rem;
+    width: 1200%; }
+  to {
+    margin: 0rem;
+    width: 100%; } }
+
+@-webkit-keyframes gray_color {
+  0% {
+    -webkit-filter: grayscale(100);
+            filter: grayscale(100); }
+  70% {
+    -webkit-filter: grayscale(100);
+            filter: grayscale(100); }
+  85% {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0); }
+  100% {
+    -webkit-filter: grayscale(100);
+            filter: grayscale(100); } }
+
+@keyframes gray_color {
+  0% {
+    -webkit-filter: grayscale(100);
+            filter: grayscale(100); }
+  70% {
+    -webkit-filter: grayscale(100);
+            filter: grayscale(100); }
+  85% {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0); }
+  100% {
+    -webkit-filter: grayscale(100);
+            filter: grayscale(100); } }
+
+/* Layout geral do portifolio */
+.main-grid {
+  display: grid;
+  grid-template-areas: "header" "selected" "featured" "myfooter";
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 1.5rem;
+  width: 100vw;
+  margin: 0 auto; }
+
+/* Cabeçalho do portifólio*/
+.portifolio-header {
+  grid-area: header;
+  display: grid;
+  border-bottom: 1px solid whitesmoke; }
+  .portifolio-header__logo {
+    background: url(4f256d03dbfc463a0258d67f2e8186f5.png);
+    background-size: 150px;
+    height: 150px;
+    width: 150px;
+    margin: 0.75rem 0; }
+    @media (max-width: 412px) {
+      .portifolio-header__logo {
+        margin: 4rem auto 0.75rem auto; } }
+  .portifolio-header__title h1 {
+    margin: 2.5rem 0 1.5rem 0; }
+    @media (max-width: 360px) {
+      .portifolio-header__title h1 {
+        margin: 0.75rem auto 1.5rem auto; } }
+  .portifolio-header__title h2 {
+    margin: 1rem 0 0 0; }
+
+/* Imagem em destaque */
+.selected-work {
+  display: grid;
+  grid-area: selected; }
+  .selected-work img {
+    height: auto;
+    opacity: 0.85; }
+
+/* Grid com os trabalhos em destaque */
+.featured-work {
+  grid-area: featured; }
+  .featured-work__header {
+    border-bottom: 1px solid whitesmoke;
+    margin: 4rem 0 1.5rem 0; }
+    .featured-work__header h3 {
+      margin-bottom: 1rem; }
+  .featured-work__articles {
+    display: grid; }
+    .featured-work__articles__work:nth-child(1) {
+      -webkit-animation-delay: 0.25s;
+              animation-delay: 0.25s; }
+    .featured-work__articles__work:nth-child(2) {
+      -webkit-animation-delay: 0.5s;
+              animation-delay: 0.5s; }
+    .featured-work__articles__work:nth-child(3) {
+      -webkit-animation-delay: 0.75s;
+              animation-delay: 0.75s; }
+    .featured-work__articles__work:nth-child(4) {
+      -webkit-animation-delay: 1s;
+              animation-delay: 1s; }
+    .featured-work__articles__work:nth-child(5) {
+      -webkit-animation-delay: 1.25s;
+              animation-delay: 1.25s; }
+    .featured-work__articles__work:nth-child(6) {
+      -webkit-animation-delay: 1.5s;
+              animation-delay: 1.5s; }
+    .featured-work__articles__work:nth-child(7) {
+      -webkit-animation-delay: 1.75s;
+              animation-delay: 1.75s; }
+    .featured-work__articles__work:nth-child(8) {
+      -webkit-animation-delay: 2s;
+              animation-delay: 2s; }
+    .featured-work__articles__work:nth-child(9) {
+      -webkit-animation-delay: 2.25s;
+              animation-delay: 2.25s; }
+    .featured-work__articles__work {
+      -webkit-filter: grayscale(100);
+              filter: grayscale(100);
+      -webkit-animation: gray_color 5s forwards infinite;
+              animation: gray_color 5s forwards infinite;
+      margin: 0rem;
+      padding: 0rem;
+      border-radius: .5rem; }
+      .featured-work__articles__work:hover {
+        -webkit-animation: none;
+                animation: none;
+        -webkit-filter: grayscale(0);
+                filter: grayscale(0);
+        background-color: whitesmoke;
+        margin: -1rem;
+        padding: 1rem;
+        transition: 0.25s;
+        -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite; }
+      .featured-work__articles__work h4 {
+        margin: 0.75rem 0 0.75rem; }
+      .featured-work__articles__work footer {
+        margin: 0.75rem 0 4rem 0; }
+
+.portifolio-footer {
+  margin: 2.5rem 0 0 0;
+  padding: 1rem;
+  grid-area: myfooter;
+  text-align: center;
+  background-color: whitesmoke; }
+
