@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css?d25b8a856c113a2df5d6">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
     <link rel="shortcut icon" href="./img/favicon.png" />
 
     <title>Portifolio Denis Forigo</title>
@@ -144,7 +144,7 @@ by Alexis Delgado Búrdalo" sizes="(min-width: 450px) 100vw, (min-width: 0px) 10
             <p>Website by Denis Forigo</p>
         </footer>
     </div>
-    <script src="js/main.js?d25b8a856c113a2df5d6"></script>
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 
 </html>

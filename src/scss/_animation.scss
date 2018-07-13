@@ -1,0 +1,25 @@
+@keyframes slidein {
+    from {
+        margin: -50rem;
+        width: 1200%;
+    }
+    to {
+        margin: 0rem;
+        width: 100%;
+    }
+}
+
+@keyframes gray_color {
+    0% {
+        filter: grayscale(100);
+    }
+    70% {
+        filter: grayscale(100);
+    }
+    85% {
+        filter: grayscale(0);
+    }
+    100% {
+        filter: grayscale(100);
+    }
+}

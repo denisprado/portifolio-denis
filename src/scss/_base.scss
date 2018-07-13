@@ -1,0 +1,71 @@
+// Variáveis
+$primary-color: #226699;
+$secondary-color: rgb(245, 245, 245);
+$ratio: 1;
+$space0: 0.75rem;
+$space1: 1rem;
+$space2: 1.5rem;
+$space3: 2.5rem;
+$space4: 4rem;
+$space5: 7.5rem;
+
+/* Transformando 1rem em 10px*/
+body {
+  box-sizing: border-box;
+  font-size: 0.625rem;
+  margin: 0 auto;
+}
+
+// Layout geral
+%container {
+  width: 100%;
+  margin: 0 auto;
+  @media (max-width: 320px) {
+    max-width: 300px;
+  }
+  @media (min-width: 575.98px) {
+    max-width: 540px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    max-width: 556px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    max-width: 748px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    max-width: 972px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+
+//Layout dos trabalhos
+%work-grid {
+
+  @media (max-width: 575.98px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @media (min-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 992px){
+    grid-template-columns: repeat(3, 1fr);
+  } 
+  grid-gap: $space2;
+}
+
+//Layout do cabeçalho
+%header-grid {
+  grid-template-columns: repeat(2, 1fr);
+  @media (max-width: 412px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+// Imagens responsívas
+%responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
